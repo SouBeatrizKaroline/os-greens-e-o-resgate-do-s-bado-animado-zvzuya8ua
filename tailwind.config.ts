@@ -27,8 +27,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter var', 'SF Pro Display', 'system-ui', 'sans-serif'],
-        display: ['SF Pro Display', 'Inter var', 'system-ui', 'sans-serif'],
+        sans: ['Fredoka', 'system-ui', 'sans-serif'],
+        display: ['Baloo 2', 'Fredoka', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: 'hsl(var(--border))',
@@ -94,9 +94,18 @@ export default {
       boxShadow: {
         subtle: '0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03)',
         elevation: '0 4px 20px rgba(0, 0, 0, 0.05)',
+        glow: '0 0 30px hsl(var(--primary) / 0.4), 0 0 60px hsl(var(--secondary) / 0.2)',
+        'glow-accent': '0 0 30px hsl(var(--accent) / 0.4)',
       },
       transitionTimingFunction: {
         apple: 'cubic-bezier(0.42, 0, 0.58, 1)',
+        bounce: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+      },
+      backgroundImage: {
+        'magical-gradient':
+          'linear-gradient(135deg, hsl(210 60% 8%), hsl(260 50% 12%), hsl(210 60% 8%))',
+        starfield:
+          'radial-gradient(2px 2px at 20% 30%, hsl(var(--primary) / 0.8), transparent), radial-gradient(2px 2px at 60% 70%, hsl(var(--accent) / 0.6), transparent), radial-gradient(1px 1px at 50% 50%, hsl(var(--secondary) / 0.5), transparent), radial-gradient(1px 1px at 80% 10%, hsl(var(--primary) / 0.7), transparent), radial-gradient(2px 2px at 90% 60%, hsl(var(--accent) / 0.4), transparent), radial-gradient(1px 1px at 33% 80%, hsl(var(--secondary) / 0.6), transparent), radial-gradient(1px 1px at 15% 90%, hsl(var(--primary) / 0.5), transparent)',
       },
     },
   },
